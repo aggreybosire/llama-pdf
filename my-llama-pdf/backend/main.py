@@ -19,7 +19,7 @@ if environment == "dev":
     logger.warning("Running in development mode - allowing CORS for all origins")
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://lbdabot-python.onrender.com","https://lbdabot-python.onrender.com"],
+        allow_origins=["http://lbdabot-python.onrender.com","https://lbdabot-python.onrender.com","https://lbdabot.onrender.com/", "http://lbdabot.onrender.com/"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
